@@ -1,16 +1,13 @@
-$xs: '(min-width: 0)';
 $sm: '(min-width: 768px)';
 $md: '(min-width: 992px)';
 $lg: '(min-width: 1200px)';
 
 @mixin breakpoint($media) {
-	@if $media == xs {
-		@media only screen and #{$xs} { @content };
-	} @else if $media == sm {
-    @media only screen and #{$sm} { @content };
-  } @else if $media == md {
-    @media only screen and #{$md} { @content };
-  } @else if $media == lg {
-    @media only screen and #{$lg} { @content };
-  }
+	@if $media == sm {
+    	@media only screen and #{$sm} { @content };
+	} @else if $media == md {
+		@media only screen and #{$md} { @content };
+	} @else if $media == lg {
+		@media only screen and #{$lg} { @content };
+	}
 }

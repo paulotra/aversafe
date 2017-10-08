@@ -76,7 +76,16 @@ body {
 
         @include breakpoint(lg) {
           margin: 0 0 0 45px;
+          padding: 21px 0 21px 18px;
         }
+      }
+    }
+
+    .contact-us {
+      margin-top: 60px;
+
+      @include breakpoint(md) {
+        margin-top: 0;
       }
     }
 
@@ -93,6 +102,23 @@ body {
 
         @include breakpoint(lg) {
           margin-top: 175px;
+        }
+      }
+
+      .shield {
+        margin-top: 0;
+
+        @include breakpoint(lg) {
+          margin-top: 61px;
+        }
+      }
+
+      .text {
+        margin-bottom: 50px;
+
+        @include breakpoint(lg) {
+          margin-left: 48px;
+          padding-right: 71px;
         }
       }
     }
