@@ -1,6 +1,5 @@
 .input-group {
 	box-shadow: 0 3px 10px 0 rgba(0, 0, 0, .14);
-	border: solid 1px $blue;
 	border-radius: 2px;
 	overflow: hidden;
 
@@ -10,18 +9,21 @@
 	  color: $white;
 	  font-family: $SFUIDisplay600;
 	}
+
 	::-moz-placeholder {
 	  letter-spacing: .5px;
 	  font-size: 14px;
 	  color: $white;
 	  font-family: $SFUIDisplay600;
 	}
+
 	:-ms-input-placeholder {
 	  letter-spacing: .5px;
 	  font-size: 14px;
 	  color: $white;
 	  font-family: $SFUIDisplay600;
 	}
+
 	:-moz-placeholder {
 	  letter-spacing: .5px;
 	  font-size: 14px;
@@ -46,6 +48,7 @@
 			font-size: 12px;
 			letter-spacing: 1px;
 			padding: 0 23px 0 27px;
+			border-radius: 0;
 
 			&:hover {
 				color: $white;

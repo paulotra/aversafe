@@ -86,9 +86,25 @@ body {
         width: 100%;
         margin: auto;
       }
+
+      .heading-border {
+        margin-top: 71px;
+        margin-bottom: 16px;
+
+        @include breakpoint(lg) {
+          margin-top: 175px;
+        }
+      }
+    }
+
+    .partners {
+      padding-top: 72px;
+      padding-bottom: 82px;
     }
 
     .newsletter {
+      padding-top: 152px;
+      padding-bottom: 139px;
       background: url('../images/newsletter.png') no-repeat center;
       background-size: cover;
 

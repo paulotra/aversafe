@@ -1,6 +1,6 @@
 // Margin/Padding Helpers
 
-@for $i from -50 through 200 {
+@for $i from -5 through 80 {
   @include breakpoint(xs) {
     .ma-#{$i} { margin: #{$i}px !important; }
     .mt-#{$i} { margin-top: #{$i}px !important; }
@@ -15,7 +15,7 @@
   }
 }
 
-@for $i from -50 through 200 {
+@for $i from -5 through 80 {
   @include breakpoint(sm) {
     .ma-sm-#{$i} { margin: #{$i}px !important; }
     .mt-sm-#{$i} { margin-top: #{$i}px !important; }
@@ -30,7 +30,7 @@
   }
 }
 
-@for $i from -50 through 200 {
+@for $i from -5 through 80 {
   @include breakpoint(md) {
     .ma-md-#{$i} { margin: #{$i}px !important; }
     .mt-md-#{$i} { margin-top: #{$i}px !important; }
@@ -45,7 +45,7 @@
   }
 }
 
-@for $i from -50 through 200 {
+@for $i from -5 through 80 {
   @include breakpoint(lg) {
     .ma-lg-#{$i} { margin: #{$i}px !important; }
     .mt-lg-#{$i} { margin-top: #{$i}px !important; }
