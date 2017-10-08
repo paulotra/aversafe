@@ -1,0 +1,25 @@
+p {
+	color: $white;
+	font-family: $SFUIDisplay600;
+	font-size: 14px;
+	letter-spacing: .5px;
+	line-height: 16px;
+	margin: 0;
+
+	&.md {
+		font-size: 16px;
+		line-height: 19px;
+	}
+
+	&.highlighted {
+		font-family: $SFUIDisplay900;
+		font-size: 12px;
+		letter-spacing: 1px;
+		line-height: 14px;
+		text-transform: uppercase;
+	}
+}
+
+b {
+	font-family: $SFUIDisplay900;
+}

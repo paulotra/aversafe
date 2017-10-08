@@ -1,0 +1,55 @@
+body {
+	footer {
+		margin-top: 45px;
+		text-align: center;
+
+		@include breakpoint(md) {
+			text-align: left;
+		}
+
+		img {
+			margin-left: auto;
+			margin-right: auto;
+
+			@include breakpoint(md) {
+				margin-left: 0;
+				margin-right: 0;
+			}
+		}
+
+		.social-media {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			text-align: center;
+
+			li {
+				margin: 0 20px;
+				display: inline-block;
+
+				&:first-child {
+					margin-left: 0;
+				}
+
+				&:last-child {
+					margin-right: 0;
+				}
+
+				img {
+					max-width: 24px;
+				}
+			}
+		}
+
+		.faq {
+			max-width: auto;
+			margin-top: 10px;
+
+			@include breakpoint(md) {
+				float: right;
+				max-width: 261px;
+				margin-right: 38px;
+			}
+		}
+	}
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- These meta tags come first. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Avarsafe</title>
+
+    <!-- Favicon -->
+    <link href='node_modules/bootstrap/dist/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+    <link href='css/styles.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="image">
+        <img src="images/bg.svg" />
+    </div>
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3">
+                    <button class="nav-toggler hidden-md hidden-lg pull-right">
+                        <span class="top"></span>
+                        <span class="mid"></span>
+                        <span class="bot"></span>
+                    </button>
+                    <img src="images/logo.svg" class="logo img-responsive" alt="" />
+                </div>
+                <div class="col-md-9">
+                    <nav>
+                        <button class="nav-toggler hidden-md hidden-lg pull-right">
+                            <span class="top"></span>
+                            <span class="mid"></span>
+                            <span class="bot"></span>
+                        </button>
+                        <ul class="nav nav-pills">
+                            <li>
+                                <a href="index.html">HOME</a>
+                            </li>
+                            <!-- <li>
+                                <a href="#">SOLUTION</a>
+                            </li>
+                            <li>
+                                <a href="#">BLOG</a>
+                            </li> -->
+                            <li>
+                                <a href="contact.html">CONTACT</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <h1 class="white text-uppercase mb-20 mt-115">
+                    Contact us
+                </h1>
+                <p class="bordered-left one pl-21 pb-19 mb-55">If you would like to find out more or arrange a demo, please contact us on the details below or fill out the form and we will get in touch shortly.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="content mt-0">
+                    <div class="block white pt-47 pb-145">
+                        <img src="images/shield.svg" class="ml-md--26 ml-0" alt="" />
+                        <div class="row mt-68">
+                            <div class="col-md-4">
+                                <div class="heading-border"></div>
+                                <p class="mt-19 max-width-252">The Varnish Works,3 Bravingtons Walk,London,N1 9AJ</p>
+                                <p class="mt-9 mb-7">+44 203 326 1888</p>
+                                <p class="blue">hi@aversafe.com</p>
+                            </div>
+                            <div class="col-md-5">
+                                <form action="">
+                                    <div class="heading-border mt-60 mt-md-0"></div>
+                                    <h1 class="mt-16 mb-58">Send us a message</h1>
+                                    <div class="form-group">
+                                        <label for="name">Name</label>
+                                        <input type="text" class="form-control" id="name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email</label>
+                                        <input type="text" class="form-control" id="email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="message">Message</label>
+                                        <textarea name="message" class="form-control" id="message"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="btn btn-success mt-14" value="SEND" />
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="newsletter pt-152 pb-139">
+                        <form action="">
+                            <img src="images/mail-white.svg" alt="" />
+                            <p class="highlighted mt-13 mb-22 white">Sign up to our newsletter now!</p>
+                            <div class="input-group mt-13">
+                                <input type="text" class="form-control" placeholder="Your Email">
+                                <span class="input-group-btn">
+                                    <button class="btn" type="button">SIGN UP</button>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="mb-37">
+                        <img src="images/logo.svg" class="logo img-responsive" alt="" />
+                        <p class="mt-5">© 2017 Aversafe. All rights reserved.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <ul class="social-media mb-37">
+                        <li><a href="#" target="_blank"><img src="images/fb.svg" /></a></li>
+                        <li><a href="#" target="_blank"><img src="images/twitter.svg" /></a></li>
+                        <li><a href="#" target="_blank"><img src="images/m.png" /></a></li>
+                        <li><a href="#" target="_blank"><img src="images/plane.svg" /></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <div class="faq">                            
+                        <p class="highlighted mb-5">More questions?</p>
+                        <p>Reach out and say hi, hi@aversafe.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    var nav_toggler = $('.nav-toggler');
+    var body = $('body');
+
+    var toggleNav = function() {
+        var nav = $('nav');
+        if(nav.hasClass('show')) {
+            nav.removeClass('show');
+            body.removeClass('fade');
+        } else {
+            nav.addClass('show');
+            body.addClass('fade');
+        }
+    };
+
+    nav_toggler.click(toggleNav);
+</script>
+</html>

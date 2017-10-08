@@ -1,0 +1,88 @@
+.input-group {
+	box-shadow: 0 3px 10px 0 rgba(0, 0, 0, .14);
+	border: solid 1px $blue;
+	border-radius: 2px;
+	overflow: hidden;
+
+	::-webkit-input-placeholder {
+	  letter-spacing: .5px;
+	  font-size: 14px;
+	  color: $white;
+	  font-family: $SFUIDisplay600;
+	}
+	::-moz-placeholder {
+	  letter-spacing: .5px;
+	  font-size: 14px;
+	  color: $white;
+	  font-family: $SFUIDisplay600;
+	}
+	:-ms-input-placeholder {
+	  letter-spacing: .5px;
+	  font-size: 14px;
+	  color: $white;
+	  font-family: $SFUIDisplay600;
+	}
+	:-moz-placeholder {
+	  letter-spacing: .5px;
+	  font-size: 14px;
+	  color: $white;
+	  font-family: $SFUIDisplay600;
+	}
+
+	input.form-control {
+		background-color: $dark-blue;
+		border: 0;
+		line-height: 45px;
+		height: 45px;
+		padding: 0 19px;
+		border-radius: 0;
+	}
+
+	.input-group-btn {
+		.btn {
+			background-color: $blue;
+			color: $white;
+			font-family: $SFUIDisplay900;
+			font-size: 12px;
+			letter-spacing: 1px;
+			padding: 0 23px 0 27px;
+
+			&:hover {
+				color: $white;
+			}
+		}
+	}
+}
+
+form {
+	.form-group {
+		label {
+			color: $black;
+			font-family: $SFUIDisplay600;
+			font-size: 14px;
+			letter-spacing: .5px;
+			line-height: 16px;
+			margin: 0 0 15px;
+		}
+
+		.form-control {
+			background-color: $dark-grey;
+			border-radius: 2px;
+			border: solid 2px $light-blue;
+			box-shadow: none;
+			height: 45px;
+			line-height: 45px;
+			padding: 0 15px;
+		}
+
+		textarea.form-control {
+			resize: none;
+			height: 150px;
+		}
+
+		.btn {
+			padding: 0;
+			width: 119px;
+		}
+	}
+}

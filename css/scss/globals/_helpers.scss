@@ -1,0 +1,85 @@
+// Margin/Padding Helpers
+
+@for $i from -50 through 200 {
+  @include breakpoint(xs) {
+    .ma-#{$i} { margin: #{$i}px !important; }
+    .mt-#{$i} { margin-top: #{$i}px !important; }
+    .mb-#{$i} { margin-bottom: #{$i}px !important; }
+    .ml-#{$i} { margin-left: #{$i}px !important; }
+    .mr-#{$i} { margin-right: #{$i}px !important; }
+    .pa-#{$i} { padding: #{$i}px !important; }
+    .pt-#{$i} { padding-top: #{$i}px !important; }
+    .pb-#{$i} { padding-bottom: #{$i}px !important; }
+    .pl-#{$i} { padding-left: #{$i}px !important; }
+    .pr-#{$i} { padding-right: #{$i}px !important; }
+  }
+}
+
+@for $i from -50 through 200 {
+  @include breakpoint(sm) {
+    .ma-sm-#{$i} { margin: #{$i}px !important; }
+    .mt-sm-#{$i} { margin-top: #{$i}px !important; }
+    .mb-sm-#{$i} { margin-bottom: #{$i}px !important; }
+    .ml-sm-#{$i} { margin-left: #{$i}px !important; }
+    .mr-sm-#{$i} { margin-right: #{$i}px !important; }
+    .pa-sm-#{$i} { padding: #{$i}px !important; }
+    .pt-sm-#{$i} { padding-top: #{$i}px !important; }
+    .pb-sm-#{$i} { padding-bottom: #{$i}px !important; }
+    .pl-sm-#{$i} { padding-left: #{$i}px !important; }
+    .pr-sm-#{$i} { padding-right: #{$i}px !important; }
+  }
+}
+
+@for $i from -50 through 200 {
+  @include breakpoint(md) {
+    .ma-md-#{$i} { margin: #{$i}px !important; }
+    .mt-md-#{$i} { margin-top: #{$i}px !important; }
+    .mb-md-#{$i} { margin-bottom: #{$i}px !important; }
+    .ml-md-#{$i} { margin-left: #{$i}px !important; }
+    .mr-md-#{$i} { margin-right: #{$i}px !important; }
+    .pa-md-#{$i} { padding: #{$i}px !important; }
+    .pt-md-#{$i} { padding-top: #{$i}px !important; }
+    .pb-md-#{$i} { padding-bottom: #{$i}px !important; }
+    .pl-md-#{$i} { padding-left: #{$i}px !important; }
+    .pr-md-#{$i} { padding-right: #{$i}px !important; }
+  }
+}
+
+@for $i from -50 through 200 {
+  @include breakpoint(lg) {
+    .ma-lg-#{$i} { margin: #{$i}px !important; }
+    .mt-lg-#{$i} { margin-top: #{$i}px !important; }
+    .mb-lg-#{$i} { margin-bottom: #{$i}px !important; }
+    .ml-lg-#{$i} { margin-left: #{$i}px !important; }
+    .mr-lg-#{$i} { margin-right: #{$i}px !important; }
+    .pa-lg-#{$i} { padding: #{$i}px !important; }
+    .pt-lg-#{$i} { padding-top: #{$i}px !important; }
+    .pb-lg-#{$i} { padding-bottom: #{$i}px !important; }
+    .pl-lg-#{$i} { padding-left: #{$i}px !important; }
+    .pr-lg-#{$i} { padding-right: #{$i}px !important; }
+  }
+}
+
+.white { color: $white !important; }
+.black { color: $black !important; }
+.blue { color: $blue !important; }
+
+.bordered-left {
+  &:not(.one) {
+    border-top: 4px solid $blue;
+  }
+
+  @include breakpoint(md) {
+    &:not(.one) {
+      border-left: 4px solid $blue;
+      border-top: 0;
+    }
+  }
+  
+  &.one {
+    border-left: 1px solid $blue;
+  } 
+}
+
+.max-width-313 { max-width: 313px; }
+.max-width-252 { max-width: 252px; }

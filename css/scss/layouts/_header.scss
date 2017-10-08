@@ -1,0 +1,240 @@
+body {
+    > .image {
+    	max-width: 1765px;
+    	position: relative;
+    	margin: auto;
+
+    	img {
+    		position: absolute;
+    		max-width: 70%;
+
+    		@include breakpoint(md) {
+				max-width: 80%;
+    		}
+    	}
+    }
+
+    .overlay {
+    	background: linear-gradient(179deg, $dark-blue, $blue);
+    	position: absolute;
+    	height: 942px;
+    	left: 0;
+    	right: 0;
+    	top: 0;
+    }
+
+	header {
+	    margin: auto;
+	    padding: 0;
+
+	    @include breakpoint(md) {
+			padding: 0 25px;
+		}
+
+		.logo {
+			margin: 20px 0 0;
+
+			@include breakpoint(md) {
+				margin: 43px 0 0;
+			}
+		}
+
+		.nav-toggler {
+			height: 17px;
+			width: 20px;
+			position: relative;
+			background: transparent;
+			border: 0;
+			padding: 0;
+			top: 3px;
+			outline: none;
+
+			.top {
+				position: absolute;
+				right: 0;
+				left: 0;
+				height: 2px;
+				width: 100%;
+				top: 0;
+				background: $white;
+			}
+
+			.mid {
+				background: $white;
+				bottom: 0;
+				height: 2px;
+				margin: auto;
+				position: absolute;
+				right: 0;
+				left: 0;
+				top: 0;
+				width: 100%;
+			}
+
+			.bot {
+				position: absolute;
+				right: 0;
+				left: 0;
+				height: 2px;
+				width: 100%;
+				bottom: 0;
+				background: $white;
+			}
+		}
+
+		nav {
+			position: fixed;
+			background: #1b2638;
+			float: none;
+		    top: 0%;
+		    right: -100%;
+		    width: 240px;
+    		z-index: 10000000;
+    		bottom: 0;
+    		transition: all .3s;
+
+			@include breakpoint(md) {
+				float: right;
+				background: transparent;
+				padding: 0;
+				position: static;
+				width: auto;
+				margin-top: 35px;
+			}
+
+    		&.show {
+    			right: 0;
+    		}
+
+    		.nav-toggler {
+				top: 25px;
+				right: 15px;
+    		}
+		}
+
+		.nav {
+			padding: 70px 60px 10px 0;
+
+			@include breakpoint(md) {
+				padding: 0;
+			}
+
+			li {
+				margin-left: 0;
+				display: block;
+				width: 100%;
+				text-align: left;
+
+				@include breakpoint(md) {
+					margin-left: 47px;
+					text-align: left;
+					width: auto;
+
+					&:first-child {
+						margin-left: 0;
+					}
+				}
+
+				a {
+					color: $white;
+					font-family: $SFUIDisplay900;
+					font-size: 14px;
+					letter-spacing: 1px;
+					line-height: 16px;
+					padding: 8px 20px;
+
+					&:hover {
+						background: transparent;
+					}
+
+					@include breakpoint(md) {
+						color: $white;
+					}
+				}
+			}
+		}
+
+		.banner {
+			margin-top: 20px;
+			text-align: center;
+
+			@include breakpoint(md) {
+				margin-top: 80px;
+			}
+
+			@include breakpoint(lg) {
+				margin-top: 168px;
+			}
+
+			&.text-left {
+				text-align: left;
+			}
+
+			img {
+				max-width: 180px;
+				margin: auto;
+
+				@include breakpoint(sm) {
+					max-width: 230px;
+				}
+
+				@include breakpoint(md) {
+					display: inline-block;
+					vertical-align: top;
+				}
+			}
+
+			.text-wrapper {
+				margin: 20px auto;
+				max-width: 667px;
+				text-align: center;
+
+				@include breakpoint(md) {
+					display: inline-block;
+					margin: 0 0 0 35px;
+					text-align: left;
+					vertical-align: top;
+				}
+
+				@include breakpoint(lg) {
+					max-width: 667px;
+				}
+
+				h1 {
+					text-align: center;
+
+					@include breakpoint(md) {
+						text-align: left;
+					}
+				}
+
+				p {
+					font-size: 16px;
+					letter-spacing: .5px;
+					color: $white;
+					font-family: $SFUIDisplay600;
+					border-top: $blue 1px solid;
+					line-height: 19px;
+					padding: 21px 10px 0;
+
+					@include breakpoint(sm) {
+						padding: 21px 40px 0;
+					}
+
+					@include breakpoint(md) {
+						border-left: $blue 1px solid;
+						border-top: 0;
+						padding: 0 0 0 21px;
+						max-width: 534px;
+					}
+
+					span {
+						font-size: 14px;
+						font-family: $SFUIDisplay900;
+						letter-spacing: 2px;
+					}
+				}
+			}
+		}
+	}
+}
