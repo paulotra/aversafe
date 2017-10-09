@@ -27,7 +27,7 @@ body {
 	    margin: auto;
 	    padding: 0;
 
-	    @include breakpoint(md) {
+	    @include breakpoint(lg) {
 			padding: 0 25px;
 		}
 
@@ -119,7 +119,7 @@ body {
 				padding: 0;
 			}
 
-			li {
+			> li {
 				margin-left: 0;
 				display: block;
 				width: 100%;
@@ -142,20 +142,51 @@ body {
 					}
 				}
 
-				a {
+				> a {
 					color: $white;
 					font-family: $SFUIDisplay900;
 					font-size: 14px;
 					letter-spacing: 1px;
 					line-height: 16px;
 					padding: 8px 20px;
+					transition: all .45s;
+					position: relative;
+
+					&:focus {
+						background-color: transparent;
+						outline: none;
+					}
 
 					&:hover {
+						color: $darker-blue;
 						background: transparent;
+
+						@include breakpoint(md) {
+							&::after {
+								opacity: 1;
+								transition: all .45s;
+								bottom: -13px;
+							}
+						}
+					}
+
+					@include breakpoint(md) {
+						&::after {
+							content: '';
+							position: absolute;
+							left: 0;
+							right: 0;
+							height: 3px;
+							width: 100%;
+							background-color: $darker-blue;
+							bottom: -20px;
+							opacity: 0;
+						}
 					}
 
 					@include breakpoint(md) {
 						color: $white;
+						padding: 0;
 					}
 				}
 

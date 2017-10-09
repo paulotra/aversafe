@@ -50,9 +50,11 @@
 			letter-spacing: 1px;
 			padding: 0 23px 0 27px;
 			border-radius: 0;
+			transition: .3s;
 
 			&:hover {
 				color: $white;
+				background-color: $blue - 20;
 			}
 		}
 	}

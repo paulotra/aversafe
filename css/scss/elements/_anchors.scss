@@ -1,0 +1,15 @@
+a {
+	font-family: $SFUIDisplay900;
+	font-size: 12px;
+	letter-spacing: 1px;
+	line-height: 14px;
+	text-transform: uppercase;
+	color: $blue;
+	margin: 0;
+	transition: .3s all;
+
+	&:hover {
+		text-decoration: none;
+		color: $blue - 80;
+	}
+}
