@@ -113,7 +113,7 @@ body {
 		}
 
 		.nav {
-			padding: 70px 60px 10px 0;
+			padding: 70px 0 10px 0;
 
 			@include breakpoint(md) {
 				padding: 0;
@@ -124,6 +124,13 @@ body {
 				display: block;
 				width: 100%;
 				text-align: left;
+
+				.icon {
+					vertical-align: top;
+					margin-left: 10px;
+					position: relative;
+					top: 5px;
+				}
 
 				@include breakpoint(md) {
 					margin-left: 47px;
@@ -149,6 +156,50 @@ body {
 
 					@include breakpoint(md) {
 						color: $white;
+					}
+				}
+
+				&.open {
+					a {
+						background: transparent !important;
+					}
+
+					ul {
+						position: static;
+					    float: none;
+					    width: 100%;
+						left: auto;
+						right: 15px;
+						background: $white;
+						box-shadow: 0 3px 10px 0 rgba(0,0,0,0.17);
+						border: 0;
+						border-radius: 0;
+
+						@include breakpoint(md) {
+							width: auto;
+							position: absolute;
+							float: left;
+							border-radius: 0 0 2px 2px;
+						}
+
+						li {
+							margin-left: 0;
+
+							a {
+								color: $black;
+								padding: 7px 20px;
+								font-family: $SFUIDisplay600;
+
+								@include breakpoint(md) {
+									padding: 7px 15px;
+								}
+
+								&:hover {
+									background: $blue !important;
+									color: $white;
+								}
+							}
+						}
 					}
 				}
 			}

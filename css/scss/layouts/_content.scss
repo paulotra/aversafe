@@ -21,7 +21,7 @@ body {
       padding: 0 30px;
 
       @include breakpoint(md) {
-        padding: 0 74px;
+        padding: 0 75px;
       }
 
       &.grey {
@@ -91,7 +91,7 @@ body {
 
     .solution {
       .banner {
-        max-width: 550px;
+        max-width: 615px;
         width: 100%;
         margin: auto;
       }
@@ -129,8 +129,7 @@ body {
     }
 
     .newsletter {
-      padding-top: 152px;
-      padding-bottom: 139px;
+      padding: 152px 15px 139px;
       background: url('../images/newsletter.png') no-repeat center;
       background-size: cover;
 
@@ -156,7 +155,9 @@ body {
           }
 
           input.form-control {
+            color: $black;
             background-color: $white;
+            z-index: 1;
           }
         }
       }

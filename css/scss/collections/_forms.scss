@@ -38,6 +38,7 @@
 		height: 45px;
 		padding: 0 19px;
 		border-radius: 0;
+		color: $white;
 	}
 
 	.input-group-btn {
@@ -73,9 +74,11 @@ form {
 			border-radius: 2px;
 			border: solid 2px $light-blue;
 			box-shadow: none;
+			color: $black;
 			height: 45px;
 			line-height: 45px;
 			padding: 0 15px;
+			z-index: 1;
 		}
 
 		textarea.form-control {
